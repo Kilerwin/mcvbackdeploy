@@ -1,0 +1,6 @@
+**/node_modules/
+**/package-lock.json
+**/.env
+**/index.http
+**/metodos.http
+**/pnpm-lock.yaml
