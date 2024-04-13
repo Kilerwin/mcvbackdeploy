@@ -14,7 +14,7 @@ const options = {
       version: '2.0.0'
     },
     servers: [{
-      url: 'http://mcvapi.azurewebsites.net'
+      url: 'https://mcvapi.azurewebsites.net'
     }
     ]
   },
