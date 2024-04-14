@@ -6,7 +6,8 @@ const ACEEPTED_ORIGINS = [
   'http://localhost:3000',
   'http://localhost:8080',
   'http://192.168.0.17:8082',
-  'https://mcvapi.azurewebsites.net'
+  'https://mcvapi.azurewebsites.net',
+  'https://mcv-front.web.app'
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACEEPTED_ORIGINS } = {}) =>
