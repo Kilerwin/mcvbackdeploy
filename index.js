@@ -1,5 +1,4 @@
 import express, { json } from 'express'
-import { corsMiddleware } from './middlewares/cors.js'
 import cookieParser from 'cookie-parser'
 import { cokiesSecret } from './middlewares/cokies_secret.js'
 import 'dotenv/config'
@@ -32,12 +31,13 @@ import { historiaClinica, traerMascotas, gestionMascota } from './routes/traer_m
 import { AuxilInicioRouter } from './routes/auxil_inicio_routes.js'
 import { uploadRouter } from './routes/upload_files.js'
 import { HomePerfilRoutes } from './routes/perfil_home_routes.js'
+import cors from 'cors'
 const PORT = process.env.PORT ?? 1234
 
 const app = express()
 app.use(cookieParser())
 app.use(json())
-app.use(corsMiddleware())
+app.use(cors())
 app.use(cokiesSecret())
 app.use(fileUpload())
 // midewlere swagger
